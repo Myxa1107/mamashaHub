@@ -649,6 +649,10 @@ ma.PrimaryPart=na
 pa.PrimaryPart=qa
 a.Parent=workspace
 
+task.wait(0.1)
+
+game.Players.LocalPlayer.Character:PivotTo(b.CFrame + Vector3.new(0,5,0))
+
 game.Players.LocalPlayer.characterAdded:Connect(function()
 	game.Players.LocalPlayer.CharacterAppearanceLoaded:Wait()
 	task.wait(0.1)
