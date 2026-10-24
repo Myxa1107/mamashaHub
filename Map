@@ -648,3 +648,8 @@ ja.PrimaryPart=ka
 ma.PrimaryPart=na
 pa.PrimaryPart=qa
 a.Parent=workspace
+
+game.Players.LocalPlayer.characterAdded:Connect(function()
+	wait(2.5)
+	game.Players.LocalPlayer.Character:PivotTo(b.CFrame)
+end)
